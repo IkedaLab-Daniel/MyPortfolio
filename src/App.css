@@ -1,0 +1,168 @@
+#master{
+  max-width: 70rem; /* Set your fixed max width */
+  margin: 0 auto;   /* Center the container with automatic margins *//* Optional padding to avoid content touching screen edges */
+  width: 100%;      /* Allows shrinking when screen size is smaller */
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+/*    Globals   */
+
+.section-title{
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+/*    skills    */
+#skills{
+  color: red;
+  width: 100%;
+  height: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills .parent {
+  margin: 50px 0 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  grid-template-rows: repeat(3, 210px);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+#skills .parent .skill{
+  background-color: #131413;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 2px 19px 7px rgba(37, 37, 37, 0.5);
+  transition: 0.5s;
+}
+
+#skills .parent .skill:hover{
+  transform: scale(1.05);
+  box-shadow: -1px 2px 19px 7px rgba(75, 75, 75, 0.66);
+}
+
+#skills .parent .skill:nth-child(1):hover {
+  background-color: rgba(255, 85, 0, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(2):hover {
+  background-color: rgba(0, 94, 255, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(3):hover {
+  background-color: rgba(229, 255, 0, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(4):hover {
+  background-color: rgba(0, 187, 255, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(5):hover {
+  background-color: rgba(140, 0, 255, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(6):hover {
+  background-color: rgba(4, 138, 255, 0.461) !important;
+}
+
+#skills .parent .skill:nth-child(7):hover {
+  background-color: rgba(22, 255, 255, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(8):hover {
+  background-color: rgba(30, 255, 0, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(9):hover {
+  background-color: rgba(38, 38, 38, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(10):hover {
+  background-color: rgba(255, 55, 0, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(11):hover {
+  background-color: rgba(255, 0, 217, 0.5) !important;
+}
+
+#skills .parent .skill:nth-child(12):hover {
+  background-color: rgba(1, 189, 57, 0.5) !important;
+}
+#skills .parent .skill img{
+  width: 50px;
+  opacity: 0.9;
+  animation: techimg 4s alternate ;
+}
+
+#skills .parent .skill .tech-name{
+  margin-left: 10px;
+  animation: techName 2s alternate ;
+}
+
+#skills .parent .skill .tech-name:hover{
+  opacity: 1;
+  display: block;
+}
+
+
+@keyframes techName{
+  0%{
+    opacity: 1;
+    display: block;
+  }
+  50%{
+    opacity: 1;
+    display: block;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes techimg{
+  0%{
+    opacity: 0;
+    display: none;
+  }
+  50%{
+    opacity: 0;
+    display: none;
+  }
+  100%{
+    display: block;
+    opacity: 1;
+  }
+}
+
+/*  Responsiveness */
+
+@media (max-width: 80rem) {
+  #master{
+    max-width: 60rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  #master{
+    max-width: 40rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  #master{
+    max-width: 100%;
+  }
+}
+
+
