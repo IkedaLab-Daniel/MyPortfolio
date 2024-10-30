@@ -25,7 +25,7 @@ function Skills(){
                         </div>
                         
                         <div className="skill">
-                            <img src={css} style={{width: '55px'}} />
+                            <img src={css} />
                             <span  className='tech-name'>CSS</span>
                         </div>
                         
